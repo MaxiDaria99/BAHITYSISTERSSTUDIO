@@ -12,24 +12,41 @@
 	<header id="header">
 		<img src="../images/logobahity.png" class="imagenlogo">
 	</header>
-	<nav>
-		<h2 id="menu">Shop</h2>
-			<ul class="navegador">
-				<li><a href="../index.html">HOME</a></li>
-				<li><a href="servicios.html">SERVICIOS</a></li>
-				<li><a href="turnos.html">TURNOS</a>
-					<ul> 
-							<li>UÑAS</li>
-							<li>PIES</li>
-							<li>PIES Y MANOS</li>
-							<li>CEJAS</li>
-							<li>PESTAÑAS</li>
-					</ul>
-				</li>
-				<li><a href="academia.html">ACADEMIA</a></li>
-				<li><a href="shop.html">SHOP</a></li>
-				<li><a href="contacto.html">CONTACTO</a></li>
-			</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navegador">
+		<div class="container-fluid col-12">
+			<div class="collapse navbar-collapse navegador row" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link col-2" href="../index.html">HOME</a>
+					</li>
+					<li class="nav-item col-2">
+						<a class="nav-link" href="servicios.html">SERVICIOS</a>
+					</li>
+					<li class="nav-item dropdown col-2">
+						<a class="nav-link dropdown-toggle" href="turnos.html" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							TURNOS
+						</a>
+						<ul class="dropdown-menu col-2" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="turnos.html">UÑAS</a></li>
+							<li><a class="dropdown-item" href="turnos.html">PIES</a></li>
+							<li><a class="dropdown-item" href="turnos.html">PIES Y MANOS</a></li>
+							<li><a class="dropdown-item" href="turnos.html">CEJAS</a></li>
+							<li><a class="dropdown-item" href="turnos.html">PESTAÑAS</a></li>
+						</ul>
+					</li>
+					<li class="nav-item col-2">
+						<a class="nav-link" href="academia.html">ACADEMIA</a>
+					</li>
+					<li class="nav-item col-2">
+						<a class="nav-link disabled">SHOP</a>
+					</li>
+					<li class="nav-item col-2">
+						<a class="nav-link" href="contacto.html">CONTACTO</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<main>
 		<section>

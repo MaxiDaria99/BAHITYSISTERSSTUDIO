@@ -11,8 +11,7 @@ html{
 /*GENERAL*/
 
 header{
-	background: rgb(152,33,129);
-	background: linear-gradient(90deg, rgba(152,33,129,1) 14%, rgba(70,198,215,1) 100%);
+	background: mistyrose;
 	grid-area: header;
 	display: flex;
 
@@ -22,16 +21,16 @@ header{
 	padding: 5px;
 	border: 5px;
 	margin: 30px;
-	height: 150px;
-	width: 300px;
+	height: 35%;
+	width: 20%;
 	margin: auto;
 	display: block;
-	transform: scale(2,1);
+	
 }	
 
 .menu{
-	background-color: black;
-	color: white;
+	background-color: mistyrose;
+	color: rgb(0, 0, 0);
 	text-align: center;
 	font-size: 40px;
 	display: block;
@@ -43,7 +42,7 @@ nav{
 	margin: 5px 0px;
 	font-size: 25px;
 	font-style: bold;
-	background-color: black;
+	background-color: mistyrose;
 	color: white;
 	list-style-type: none ;
 	text-decoration: none;
@@ -57,22 +56,28 @@ nav li{
 main{
 	grid-area: main;
 	display: flex;
+	flex-direction: row;
+}
+
+.titulo{
+	margin: 40px;
+	background-color: mistyrose;
 }
 
 .main__title{
 	font-size: 40px;
 	color: black;
-	background-color: white;
-	
+	background-color: mistyrose;	
 }
 
 .main__text{
 	font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
 	color: black;
-	background-color: white;
+	background-color: mistyrose;
 	text-align: center;
 	font-style: italic;
-	margin: 10px;
+	
 }
 
 footer{
@@ -80,15 +85,22 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	background: rgb(33,152,89);
-	background: radial-gradient(circle, rgba(33,152,89,1) 0%, rgba(33,97,152,1) 64%, rgba(18,55,53,1) 100%);
+	background: mistyrose;
+}
+
+.footer__submenu{
+	display: block;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer__submenu li{
 	display: inline-block;
 	font-size: 20px;
 	height: 100px;
-	width: 100px;
+	width: auto;
+	align-items: center;
+	background-color: mistyrose;
 }
 
 body{
@@ -100,12 +112,13 @@ ul{
 	flex-direction: row;
 	list-style-type: none;
 	justify-content: space-evenly;
-	background-color: grey;
+	background-color:mistyrose;
 }
 
 ul li{
 	font-size: 30px;
 	font-family: Arial;
+	width: auto;
 	padding: 20px;
 	border: 5px;
 	margin: 10px;
@@ -163,15 +176,6 @@ ul li:hover ul {
 	color:aqua
 }
 
-.animate__animated.animate__flipOutX{
-	animation-delay:5s;
-}
-
-.animate__animated.animate__fadeOutRightBig{
-	animation-delay: 3s;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-}
 
 #grilla{
 	display: grid;
@@ -251,7 +255,7 @@ aside{
 		"titulo"
 		"main"
 		"aside"
-		"footer";
+		"footer"; 
 	}
 	.header{
 		grid-area: header;
@@ -260,17 +264,11 @@ aside{
 		
 	}
 
+	
 	.imagenlogo{
 		display: flex;
-		width: 500px;
-		height: 250px;
-	}
-
-	.navegador{
-		grid-area: nav;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: center;
+		width: 70%;
+		height: 40%;
 	}
 
 	.menu{
@@ -284,11 +282,19 @@ aside{
 		height: fit-content;
 	}
 
+	.section__contacto{
+		background-color: mistyrose;
+	}
+
 	nav ul li{
-		font-size: 50px ;
+		font-size: 17px ;
 	}
 	main{
 		grid-area: main;
+	}
+
+	.main__text{
+		font-size: 17px;
 	}
 
 	aside{
@@ -296,6 +302,15 @@ aside{
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
+	.aside__text{
+		font-size: 17px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	.aside__productos{
+		font-size: 17px;
+	}
+
 	.footer{
 		grid-area: footer;
 		display: flex;
@@ -317,11 +332,14 @@ aside{
 			"nav"
 			"section"
 			"footer";
+	}
 
+	.trabajos{
+		width: 50%;
 	}
 	
 }
-
+/**
 @media screen and (max-width: 768px){
 	#grilla{
 		grid-template-columns: 50% 50% ;
@@ -372,8 +390,8 @@ aside{
 		flex-wrap: wrap;
 	}
 
-}
-
+} 
+**/
 .clientes__titulo{
 	color: black;
 }
@@ -384,5 +402,61 @@ section form{
 
 h2{
 	color: black;
+	text-align: center;
+	background-color: mistyrose;
+	margin-bottom: 40px;
 
 }
+
+.fotos--carousel{
+	height: 60%;
+	width: 80%;
+}
+
+.titulosServicios{
+	color: black;
+}
+
+.section__servicios{
+	width: 90%;
+	background-color: mistyrose;
+	margin-bottom: 40px;
+}
+
+.servicios1{
+	flex-direction: row;
+	
+}
+
+main{
+	justify-content: center;
+	align-content: center;
+}
+
+.navegador{
+	display: flex;
+	align-content: space-evenly;
+	background-color: mistyrose;
+	padding: 0;	
+}
+
+.trabajos{
+	width: 50%;
+	height: auto;
+}
+
+.video--servicios{
+	height: auto;
+	margin: 20px;
+}
+
+.servicios--trabajos{
+	background-color: mistyrose;
+}
+
+.animate__bounce{
+	animation-delay: 3s;
+}
+
+
+

@@ -19,41 +19,61 @@
 
 <body>
 	<div class="container">
-		<header class="heade container-fluid">
+		<header class="header container-fluid">
 			<img src="images/logobahity.png" class="imagenlogo">
 		</header>
-		<nav class="row">
-			<div class="col-12">
-				<h2 class="menu">MENU</h2>
-				<ul class="navegador">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="paginas/servicios.html">SERVICIOS</a></li>
-					<li><a href="paginas/turnos.html">TURNOS</a>
-						<ul>
-							<li>UÑAS</li>
-							<li>PIES</li>
-							<li>PIES Y MANOS</li>
-							<li>CEJAS</li>
-							<li>PESTAÑAS</li>
-						</ul>
-					</li>
-					<li><a href="paginas/academia.html">ACADEMIA</a></li>
-					<li><a href="paginas/shop.html">SHOP</a></li>
-					<li><a href="paginas/contacto.html">CONTACTO</a></li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navegador">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse navegador row" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link col-md-2 col-sm-12" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item col-2">
+							<a class="nav-link" href="paginas/servicios.html">SERVICIOS</a>
+						</li>
+						<li class="nav-item dropdown col-2">
+							<a class="nav-link dropdown-toggle" href="paginas/turnos.html" id="navbarDropdown"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								TURNOS
+							</a>
+							<ul class="dropdown-menu col-2" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="paginas/turnos.html">UÑAS</a></li>
+								<li><a class="dropdown-item" href="paginas/turnos.html">PIES</a></li>
+								<li><a class="dropdown-item" href="paginas/turnos.html">PIES Y MANOS</a></li>
+								<li><a class="dropdown-item" href="paginas/turnos.html">CEJAS</a></li>
+								<li><a class="dropdown-item" href="paginas/turnos.html">PESTAÑAS</a></li>
+							</ul>
+						</li>
+						<li class="nav-item col-2">
+							<a class="nav-link" href="paginas/academia.html">ACADEMIA</a>
+						</li>
+						<li class="nav-item col-2">
+							<a class="nav-link disabled">SHOP</a>
+						</li>
+						<li class="nav-item col-2">
+							<a class="nav-link" href="paginas/contacto.html">CONTACTO</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<div class="row">
 			<div id="CarruselIndex" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="images/alpinerose.jpg" class="d-block w-100" alt="200 px">
+						<img src="images/FOTO4.jpeg" class="d-block w-100 fotos--carousel" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="..." class="d-block w-100" alt="...">
+						<img src="images/FOTO12.jpeg" class="d-block w-100 fotos--carousel" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="images/logobahity.png" class="d-block w-100" alt="...">
+						<img src="images/FOTO15.jpeg" class="d-block w-100 fotos--carousel" alt="...">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -68,22 +88,31 @@
 				</button>
 			</div>
 		</div>
-		<section class="row">
-			<h3 class="main__title animate__animated animate__fadeOutRightBig ">Esto es un titulo de importancia media
+		<section class="row titulo">
+			<h3 class="main__title">Un poco de nosotros...
 			</h3>
 		</section>
-		<main class="main animate__animated animate__fadeInRight row">
+		<main class="main row">
 			<p class="main__text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Comencé en el año 2013 con el sueño de crear mi propia empresa en el mundo de la belleza, ideando
+				servicios diferentes a los que ofrecen en el mercado, brindándolos en un ambiente cálido y soñado.
+
+				Así nació “BAHITY SISTERS STUDIO”, con el objetivo de brindar servicios de calidad junto a profesionales
+				capacitados y de vasta experiencia.
+
+				BAHITY SISTERS STUDIO es una experiencia 360°, no sólo ofrecemos potenciar tu belleza y mimarte, sino
+				también que cada momento compartido sea inolvidable… servicios de relax y de placer, acompañados con un
+				coffee break, un aperitivo o una copa de champagne.
+
+				Este momento es tuyo y nos encargamos que sea totalmente personalizado.
+
+				Te asesoramos, te cuidamos y te embellecemos.
+
+				VENÍ A CONOCERNOS Y FORMA PARTE DE NUESTRO UNIVERSO
 			</p>
 		</main>
 		<aside class="row">
-			<p class="aside__text animate__animated animate__flipOutX row col-md-6">
+			<p class="aside__text col-md-6 col-sm-12px texto--imagenluli">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -91,7 +120,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
-			<p class="aside__productos col-md-6">
+			<p class="aside__productos col-md-6 col-sm-12px texto--imagenbahity">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
